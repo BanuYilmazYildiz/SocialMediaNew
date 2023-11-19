@@ -1,0 +1,25 @@
+ext {
+    versions = [
+            springboot: "3.1.5",
+            lombok: "1.18.30",
+            openapi: "2.2.0",
+            mapstruct: "1.5.5.Final",
+            postgresql: "42.6.0",
+            springCloud: "4.0.4",
+            jwt: "4.4.0"
+    ]
+
+
+    libs = [
+            springBootWeb: "org.springframework.boot:spring-boot-starter-web:$versions.springboot",
+            springBootJpa: "org.springframework.boot:spring-boot-starter-data-jpa:$versions.springboot",
+            springBootValidation: "org.springframework.boot:spring-boot-starter-validation:$versions.springboot",
+            lombok: "org.projectlombok:lombok:$versions.lombok",
+            openApi: "org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0",
+            mapstruct: "org.mapstruct:mapstruct:$versions.mapstruct",
+            mapstructProcessor: "org.mapstruct:mapstruct-processor:$versions.mapstruct",
+            postgresql: "org.postgresql:postgresql:$versions.postgresql",
+            springOpenFeign: "org.springframework.cloud:spring-cloud-starter-openfeign:$versions.springCloud",
+            jwt: "com.auth0:java-jwt:$versions.jwt"
+    ]
+}

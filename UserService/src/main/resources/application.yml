@@ -1,0 +1,21 @@
+server:
+  port: 7071
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: root
+    url: jdbc:postgresql://localhost:5432/userDB
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+jwt:
+  secretKey: "_rEstUqO9&O&9e2ibad$OGUTlwAP+6Ithid4a*Taj8Wr2s4pRlcrI9ophEB2u2U5"
+  issuer: "banu"
+  audience: "bilgeadam"
